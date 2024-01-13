@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fml_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fml_signup"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="413dp"
+            android:layout_height="88dp"
+            android:src="@drawable/fml_logo_w"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/Et_Joinemail"
+            android:layout_width="251dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginEnd="107dp"
+            android:hint="가입할 Email를 입력하세요."
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="274dp" />
+
+
+        <Button
+            android:id="@+id/Btn_echeck"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="253dp"
+            android:layout_marginEnd="68dp"
+            android:background="@drawable/btn"
+            android:text="중복 확인"
+            android:textColor="@color/btn_font"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="345dp" />
+
+        <EditText
+            android:id="@+id/Et_Joinpw"
+            android:layout_width="251dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginEnd="107dp"
+            android:hint="비밀번호를 입력하세요."
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="409dp" />
+
+        <EditText
+            android:id="@+id/Et_Repw"
+            android:layout_width="251dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginEnd="107dp"
+            android:hint="비밀번호를 다시 입력하세요."
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="491dp" />
+
+        <Button
+            android:id="@+id/Btn_pcheck"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="257dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/btn"
+            android:text="재확인"
+            android:textColor="@color/btn_font"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="557dp" />
+
+        <Button
+            android:id="@+id/Btn_JoinSucceess"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginEnd="86dp"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/btn"
+            android:enabled="false"
+            android:text="회원 가입"
+            android:textColor="@color/btn_font"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

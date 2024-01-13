@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SendMsgActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fml_loc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fml_loc"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="413dp"
+            android:layout_height="88dp"
+            android:src="@drawable/fml_logo_w"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/BackMain"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="345dp"
+            android:background="@drawable/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <Button
+            android:id="@+id/gpsview"
+            android:layout_width="105dp"
+            android:layout_height="49dp"
+            android:background="@drawable/btn"
+            android:text="Click!"
+            android:textColor="@color/btn_font"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <TextView
+            android:id="@+id/Tv_Gps"
+            android:layout_width="359dp"
+            android:layout_height="70dp"
+            android:text=" "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="258dp" />
+
+        <EditText
+            android:id="@+id/Et_SendNum"
+            android:layout_width="259dp"
+            android:layout_height="62dp"
+            android:hint="번호를 입력하세요."
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="429dp" />
+
+        <Button
+            android:id="@+id/Btn_SendMsg"
+            android:layout_width="100dp"
+            android:layout_height="51dp"
+            android:background="@drawable/btn"
+            android:text="전송"
+            android:textColor="@color/btn_font"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="516dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserInfoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fml_userinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fml_userinfo"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="413dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fml_logo_w"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/Btn_Back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="350dp"
+            android:background="#00ff0000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/Viewid"
+            android:layout_width="318dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="47dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Btn_Back" />
+
+        <EditText
+            android:id="@+id/Et_Gender"
+            android:layout_width="279dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="77dp"
+            android:hint="성별을 입력하세요."
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="388dp" />
+
+        <EditText
+            android:id="@+id/Et_Name"
+            android:layout_width="272dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="44dp"
+            android:hint="이름을 입력하세요."
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/Et_Birth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/Et_Birth"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginBottom="30dp"
+            android:hint="생년월일을 입력하세요."
+            android:inputType="date"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/Et_Gender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/Et_Number"
+            android:layout_width="285dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="38dp"
+            android:hint="전화번호를 입력하세요."
+            android:inputType="phone"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/Btn_Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/Btn_Save"
+            android:layout_width="102dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="261dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/btn"
+            android:text="저장"
+            android:textColor="@color/btn_font"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
